@@ -47,11 +47,9 @@ public class RockPaperScissors {
     }
 
     static String playRockPaperScissors(Scanner scanner) {
-        // Getting input from the user
         System.out.println("Make a move! (rock/paper/scissors)");
         String playerMove = scanner.nextLine();
 
-        // Getting input from the computer
         Random random = new Random();
         int randomNumber = random.nextInt(3);
 
@@ -65,7 +63,6 @@ public class RockPaperScissors {
         }
         System.out.println("Computer chose " + computerMove + "!");
 
-        // Print results
         if (playerMove.equals(computerMove)) {
             System.out.println("It's a draw!");
         } else if (playerWins(playerMove, computerMove)) {
